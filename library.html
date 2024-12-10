@@ -25,33 +25,72 @@
             </div>
         </div>
         <div class="content">
-            <div class="bookAdd invisible" id="bookAdd">
-                <form action="" method="post" id="form" name="form">
+
+            <div class="bookAdd" id="bookAdd">
+                <div class="sectionTitle">
+                    <h1>Add a new Book</h1>
+                </div>
+                <div class="addformdiv">
+                <form action="" method="post" id="form" name="form" class="addformform">
                         <label for="title">Title:</label>
-                        <input type="text" id="title" name="title" placeholder="Title">
+                        <input type="text" id="title" name="title" placeholder="Title" required>
                         <label for="author">Author:</label>
-                        <input type="text" id="author" name="author" placeholder="Author">
+                        <input type="text" id="author" name="author" placeholder="Author" required>
                         <label for="genre">Genre:</label>
-                        <input type="genre" id="genre" name="genre" placeholder="Genre">
+                        <input type="genre" id="genre" name="genre" placeholder="Genre" required>
                         <label for="description">Description</label>
                         <textarea id="description" name="description">
                         </textarea>
-                        <label>Read or Unread:</label>
-                        <input type="radio" id="read" value="Read" name="readunread">
-                        <label for="read">Read</label>
-                        <input type="radio" id="unread" value="Unread" name="readunread">
-                        <label for="unread">Unread</label>
+                        <label>Current Status:</label>
+                        <div class="roru">
+                            <input type="radio" id="read" value="Read" name="readunread" required>
+                            <label for="read">Read</label>
+                            <div class="empty"></div>
+                            <input type="radio" id="unread" value="Unread" name="readunread" required>
+                            <label for="unread">Unread</label>
+                        </div>
+                        <div class="empty"></div>
+                        <div class="buttons">
                         <button type="submit" id="submit">Add Book</button>
                         <button type="reset">Clear Fields</button>
+                        </div>
                         
                 </form>
+                </div>
+                <h2>Recently Added:</h2>
+                <div class="recentlyAdded" id="recentlyAdded">
+                    
+                    <div class="book">
+                        <p>Title</p>
+                        <p>Author</p>
+                        <p>Genre</p>
+                        <p>Description</p>
+                    </div>
+                </div>
                         
             </div>
-            <div class="BookSearch invisible" id="genrePage">
-                To Do
+
+            <div class="bookSearch invisible" id="genrePage">
+                <div class="sectionTitle">
+                    <h1>Search By Genre</h1>
+                </div>
+                <div class="searchBox">
+                    <input type="text" id="genreSearchBox">
+                    <button>Search</button>
+                </div>
+                <div class="displayResults" id="displayResults">
+                    Results go here
+                </div>
             </div>
-            <div class="BookDisplay invisible" id="listPage">
-                To Do 
+
+            <div class="bookDisplay invisible" id="listPage">
+                <div class="sectionTitle">
+                    <h1>All Book Listings</h1>
+                </div>
+                <div class="displayResults" id="displayListResults">
+                    all listings
+                </div>
+                
             </div>
 
         </div>
