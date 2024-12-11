@@ -21,6 +21,9 @@ myLibrary.push(bookA);
 myLibrary.push(bookB);
 myLibrary.push(bookC);
 
+//Populate list with books in the array.
+generateList();
+
 //Handling SPA Features (Displaying and Undisplaying Pages)
 ////Here we get the links AND the pages and assign them to veriables
 
